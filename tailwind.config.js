@@ -15,7 +15,7 @@ export default {
         lightBlack: ["#FFFFFFB3"],
         lightBlack2: ["#FFFFFF99"],
         btnBg: ["#E7FE29"],
-        footerBg: ["#121F5E"],
+        footerBg: ["#06091A"],
       },
     },
   },

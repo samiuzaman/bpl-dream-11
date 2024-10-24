@@ -9,3 +9,6 @@ body {
 .btn{
   @apply bg-btnBg-0 border-none text-dark1-0 text-base font-bold
 }
+.f-title{
+  @apply text-2xl text-white font-semibold mb-5
+}
