@@ -2,6 +2,7 @@ import Hero from "./component/Hero/Hero";
 import Navbar from "./component/Navbar/Navbar";
 import Footer from "./component/Footer/Footer";
 import Main from "./component/Main/Main";
+import Newsletter from "./component/Newsletter/Newsletter";
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
         <Navbar></Navbar>
         <Hero></Hero>
       </header>
-      <main className="w-11/12 lg:w-4/5 mx-auto my-16">
-      <Main></Main>
+      <main className="w-11/12 lg:w-4/5 mx-auto my-28">
+        <Main></Main>
+        <Newsletter></Newsletter>
       </main>
       <footer>
         <Footer></Footer>

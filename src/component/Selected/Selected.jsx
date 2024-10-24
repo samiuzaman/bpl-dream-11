@@ -2,7 +2,7 @@ import { FaTrashAlt } from "react-icons/fa";
 const Selected = ({ cards }) => {
   console.log(cards);
   return (
-    <div className="mt-12">
+    <div className="pb-16">
       <h2>Selected Page</h2>
       <div>
         {cards.map((card) => (
@@ -27,7 +27,9 @@ const Selected = ({ cards }) => {
           </div>
         ))}
         <div className="w-48 p-2 border-2 rounded-xl">
-          <button className="w-full btn myBtn btn-color">Add More Player</button>
+          <button className="w-full btn myBtn btn-color">
+            Add More Player
+          </button>
         </div>
       </div>
     </div>

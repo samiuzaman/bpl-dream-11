@@ -1,7 +1,7 @@
 import Footerlogo from "../../assets/logo-footer.png";
 const Footer = () => {
   return (
-    <div className="bg-footerBg-0 pt-36">
+    <div className=" bg-footerBg-0 pt-48">
       <div className="flex justify-center">
         <img src={Footerlogo}></img>
       </div>
