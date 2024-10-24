@@ -1,3 +1,4 @@
+import Hero from "./component/Hero/Hero";
 import Navbar from "./component/Navbar/Navbar";
 
 function App() {
@@ -5,8 +6,9 @@ function App() {
     <>
       <header className="w-11/12 lg:w-4/5 mx-auto">
         <Navbar></Navbar>
+        <Hero></Hero>
       </header>
-      <main className="w-11/12 lg:w-4/5 mx-auto"> bpl-dream-11</main>
+      <main className="w-11/12 lg:w-4/5 mx-auto my-16"> bpl-dream-11</main>
       <footer></footer>
     </>
   );

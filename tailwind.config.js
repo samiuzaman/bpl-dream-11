@@ -10,8 +10,8 @@ export default {
       colors: {
         dark1: ["#131313"],
         dark2: ["#040D11"],
-        gray1: ["#131313B3"],
-        gray2: ["#13131399"],
+        dark3: ["#131313B3"],
+        dark4: ["#13131399"],
         lightBlack: ["#FFFFFFB3"],
         lightBlack2: ["#FFFFFF99"],
         btnBg: ["#E7FE29"],

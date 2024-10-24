@@ -5,3 +5,7 @@
 body {
   @apply font-Sora;
 }
+
+.btn{
+  @apply bg-btnBg-0 border-none text-dark1-0 text-base font-bold
+}
