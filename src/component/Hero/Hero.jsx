@@ -23,7 +23,7 @@ const Hero = () => {
         Beyond Boundaries Beyond Limits
       </p>
       <div className="lg:border lg:border-btnBg-0 p-1 rounded-xl">
-        <button className="btn">Claim Free Credit</button>
+        <button className="btn myBtn btn-color">Claim Free Credit</button>
       </div>
     </div>
   );
