@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/PYfSYhD/Tamim-Iqbal.jpg",
+    "role": "Batsman",
+    "batting_bowling_type": "Left-handed batsman",
+    "bidding_price": 160000
+  },
+
+  {
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://i.ibb.co.com/9H2zG1r/Virat-Kohli.jpg",
+    "role": "Batsman",
+    "batting_bowling_type": "Right-handed batsman",
+    "bidding_price": 240000
+  },
+
+  {
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/6m4Py2F/Kane-Williamson.jpg",
+    "role": "Batsman",
+    "batting_bowling_type": "Right-handed batsman",
+    "bidding_price": 150000
+  },
+
+  {
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/3NH3JN0/Glenn-Maxwell.jpg",
+    "role": "All-rounder",
+    "batting_bowling_type": "Right-handed batsman, Right-arm off-break bowler",
+    "bidding_price": 260000
+  },
+
+  {
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/KzxDzmx/Mahmudullah.webp",
+    "role": "All-rounder",
+    "batting_bowling_type": "Right-handed batsman, Right-arm off-break bowler",
+    "bidding_price": 130000
+  },
+
+  {
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "image": "https://i.ibb.co.com/m8s7TBd/Babar-Azam.png",
+    "role": "Batsman",
+    "batting_bowling_type": "Right-handed batsman",
+    "bidding_price": 220000
+  },
+
+  {
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/VVB3NGr/warner.png",
+    "role": "Batsman",
+    "batting_bowling_type": "Left-handed batsman",
+    "bidding_price": 230000
+  },
+
+  {
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/HtwBDTd/Mustafizu-Rahman.jpg",
+    "role": "Bowler",
+    "batting_bowling_type": "Left-arm fast-medium bowler",
+    "bidding_price": 150000
+  },
+
+  {
+    "name": "Andre Russell",
+    "country": "West Indies",
+    "image": "https://i.ibb.co.com/9ZsDfpS/Andre-Russell.jpg",
+    "role": "All-rounder",
+    "batting_bowling_type": "Right-handed batsman, Right-arm fast bowler",
+    "bidding_price": 270000
+  }
+]
