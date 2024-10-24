@@ -1,8 +1,12 @@
+import Navbar from "./component/Navbar/Navbar";
+
 function App() {
   return (
     <>
-      <header></header>
-      <main> bpl-dream-11</main>
+      <header className="w-11/12 lg:w-4/5 mx-auto">
+        <Navbar></Navbar>
+      </header>
+      <main className="w-11/12 lg:w-4/5 mx-auto"> bpl-dream-11</main>
       <footer></footer>
     </>
   );
