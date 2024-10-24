@@ -1,82 +1,91 @@
 [
   {
+    "id": "01",
     "name": "Tamim Iqbal",
     "country": "Bangladesh",
     "image": "https://i.ibb.co.com/PYfSYhD/Tamim-Iqbal.jpg",
     "role": "Batsman",
-    "batting_bowling_type": "Left-handed batsman",
+    "batting_bowling_type": "Left-handed bat",
     "bidding_price": 160000
   },
 
   {
+    "id": "02",
     "name": "Virat Kohli",
     "country": "India",
     "image": "https://i.ibb.co.com/9H2zG1r/Virat-Kohli.jpg",
     "role": "Batsman",
-    "batting_bowling_type": "Right-handed batsman",
+    "batting_bowling_type": "Right-handed bat",
     "bidding_price": 240000
   },
 
   {
+    "id": "03",
     "name": "Kane Williamson",
     "country": "New Zealand",
     "image": "https://i.ibb.co.com/6m4Py2F/Kane-Williamson.jpg",
     "role": "Batsman",
-    "batting_bowling_type": "Right-handed batsman",
+    "batting_bowling_type": "Right-handed bat",
     "bidding_price": 150000
   },
 
   {
+    "id": "04",
     "name": "Glenn Maxwell",
     "country": "Australia",
-    "image": "https://i.ibb.co.com/3NH3JN0/Glenn-Maxwell.jpg",
+    "image": "https://i.ibb.co.com/7CqMCp5/Glenn-Maxwell.jpg",
     "role": "All-rounder",
-    "batting_bowling_type": "Right-handed batsman, Right-arm off-break bowler",
+    "batting_bowling_type": "Right-handed bat, bowl",
     "bidding_price": 260000
   },
 
   {
+    "id": "05",
     "name": "Mahmudullah Riyad",
     "country": "Bangladesh",
     "image": "https://i.ibb.co.com/KzxDzmx/Mahmudullah.webp",
     "role": "All-rounder",
-    "batting_bowling_type": "Right-handed batsman, Right-arm off-break bowler",
+    "batting_bowling_type": "Right-handed bat, bowl",
     "bidding_price": 130000
   },
 
   {
+    "id": "06",
     "name": "Babar Azam",
     "country": "Pakistan",
     "image": "https://i.ibb.co.com/m8s7TBd/Babar-Azam.png",
     "role": "Batsman",
-    "batting_bowling_type": "Right-handed batsman",
+    "batting_bowling_type": "Right-handed bat",
     "bidding_price": 220000
   },
 
   {
+    "id": "07",
     "name": "David Warner",
     "country": "Australia",
     "image": "https://i.ibb.co.com/VVB3NGr/warner.png",
     "role": "Batsman",
-    "batting_bowling_type": "Left-handed batsman",
+    "batting_bowling_type": "Left-handed bat",
     "bidding_price": 230000
   },
 
   {
+    "id": "08",
     "name": "Mustafizur Rahman",
     "country": "Bangladesh",
     "image": "https://i.ibb.co.com/HtwBDTd/Mustafizu-Rahman.jpg",
     "role": "Bowler",
-    "batting_bowling_type": "Left-arm fast-medium bowler",
+    "batting_bowling_type": "Left-arm fast bowl",
     "bidding_price": 150000
   },
 
   {
+    "id": "09",
     "name": "Andre Russell",
     "country": "West Indies",
     "image": "https://i.ibb.co.com/9ZsDfpS/Andre-Russell.jpg",
     "role": "All-rounder",
-    "batting_bowling_type": "Right-handed batsman, Right-arm fast bowler",
+    "batting_bowling_type": "Right-handed bat,bowl",
     "bidding_price": 270000
   }
 ]
