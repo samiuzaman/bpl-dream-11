@@ -38,7 +38,7 @@ const Navbar = ({ money }) => {
       </div>
 
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-x-8">
+        <ul className="menu menu-horizontal px-1 gap-x-6">
           <li>
             <a>Home</a>
           </li>

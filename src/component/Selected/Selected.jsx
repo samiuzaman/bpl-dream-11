@@ -1,11 +1,15 @@
 import PropTypes from "prop-types";
 import { FaTrashAlt } from "react-icons/fa";
-const Selected = ({ selectedPlayer, deleteSelectedPlayer }) => {
+const Selected = ({
+  selectedPlayer,
+  deleteSelectedPlayer,
+  active,
+  handleToggleBtn,
+}) => {
   return (
-    <div className="pb-16">
-      <h2>Selected Page</h2>
+    <div className={active.availabele ? "pb-16 hidden" : "pb-16 block"}>
       {
-        <div>
+        <div className="mt-8">
           {selectedPlayer.map((cart) => (
             <div
               key={cart.id}
@@ -30,8 +34,14 @@ const Selected = ({ selectedPlayer, deleteSelectedPlayer }) => {
               </button>
             </div>
           ))}
-          <div className="w-48 p-2 border-2 rounded-xl">
-            <button className="w-full btn myBtn btn-color">
+          <div className="w-48 p-1 border-2 rounded-xl">
+            {/* <button className="w-full btn myBtn btn-color">
+              
+            </button> */}
+            <button
+              onClick={() => handleToggleBtn("availabele")}
+              className="w-full active btn border-2 text-dark4-0 join-item"
+            >
               Add More Player
             </button>
           </div>

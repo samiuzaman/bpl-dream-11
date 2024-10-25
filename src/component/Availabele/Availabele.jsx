@@ -4,7 +4,7 @@ import { IoIosContact } from "react-icons/io";
 import { FaFlag } from "react-icons/fa";
 import PropTypes from "prop-types";
 
-const Availabele = ({ selectedPlayers }) => {
+const Availabele = ({ selectedPlayers, active }) => {
   const [carts, setCards] = useState([]);
   useEffect(() => {
     fetch("players.json")
@@ -13,7 +13,7 @@ const Availabele = ({ selectedPlayers }) => {
   }, []);
 
   return (
-    <div>
+    <div className={active.availabele ? "pb-16 block" : "pb-16 hidden"}>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-6 mt-8">
         {carts.map((cart) => (
           <div
@@ -28,7 +28,7 @@ const Availabele = ({ selectedPlayers }) => {
               />
             </figure>
             <div className="cart-body">
-              <div className="flex gap-2 items-center">
+              <div className="flex gap-2 items-center mt-4 mb-3">
                 <span className="text-3xl">
                   <IoIosContact></IoIosContact>
                 </span>
@@ -75,7 +75,7 @@ const Availabele = ({ selectedPlayers }) => {
 };
 
 Availabele.propTypes = {
-  selectedPlayers: PropTypes.func
+  selectedPlayers: PropTypes.func,
 };
 
 export default Availabele;

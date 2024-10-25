@@ -10,8 +10,11 @@ body {
   @apply border-none text-dark1-0 text-base font-bold;
 }
 .btn-color {
-  @apply bg-btnBg-0
+  @apply bg-btnBg-0;
 }
 .f-title {
   @apply text-2xl text-white font-semibold mb-5;
+}
+.active {
+  @apply bg-btnBg-0 text-dark1-0 text-base font-bold;
 }

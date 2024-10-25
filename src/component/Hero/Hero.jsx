@@ -8,6 +8,8 @@ const Hero = ({ addToMoney }) => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    // backgroundImage:
+    //   "linear-gradient(to top right, #4688E4, black, black , black, #DAAE96)",
   };
   return (
     <div

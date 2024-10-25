@@ -11,7 +11,10 @@ import Selected from "./component/Selected/Selected";
 
 function App() {
   const [money, setMoney] = useState(0);
-  const [active, setActiive] = useState();
+  const [active, setActiive] = useState({
+    availabele: true,
+    status: "active",
+  });
   const [selectedPlayer, setSelectedPlayer] = useState([]);
 
   const addToMoney = () => {
@@ -20,9 +23,19 @@ function App() {
     toast("Credit Added to your Account");
   };
 
-  // const handleToggleBtn = () => {
-  //   console.log("Button is Clicked");
-  // };
+  const handleToggleBtn = (status) => {
+    if (status === "availabele") {
+      setActiive({
+        availabele: true,
+        status: "active",
+      });
+    } else {
+      setActiive({
+        availabele: false,
+        status: "active",
+      });
+    }
+  };
 
   const selectedPlayers = (player) => {
     if (selectedPlayer.length > 5) {
@@ -61,12 +74,21 @@ function App() {
         <Hero addToMoney={addToMoney} ToastContainer={ToastContainer}></Hero>
       </header>
       <main className="w-11/12 lg:w-4/5 mx-auto my-28">
-        <Main selectedPlayer={selectedPlayer}></Main>
+        <Main
+          selectedPlayer={selectedPlayer}
+          handleToggleBtn={handleToggleBtn}
+          active={active}
+        ></Main>
         <div>
-          <Availabele selectedPlayers={selectedPlayers}></Availabele>
+          <Availabele
+            selectedPlayers={selectedPlayers}
+            active={active}
+          ></Availabele>
           <Selected
             selectedPlayer={selectedPlayer}
             deleteSelectedPlayer={deleteSelectedPlayer}
+            active={active}
+            handleToggleBtn={handleToggleBtn}
           ></Selected>
         </div>
         <Newsletter></Newsletter>
