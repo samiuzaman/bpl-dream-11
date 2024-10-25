@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { IoIosContact } from "react-icons/io";
 import { FaFlag } from "react-icons/fa";
-import Selected from "../Selected/Selected";
+import PropTypes from "prop-types";
 
-const Availabele = () => {
+const Availabele = ({ selectedPlayers }) => {
   const [carts, setCards] = useState([]);
   useEffect(() => {
     fetch("players.json")
@@ -18,7 +18,7 @@ const Availabele = () => {
         {carts.map((cart) => (
           <div
             key={cart.name}
-            className="cart cart-compact bg-base-100 shadow-xl w-[350px] max-w-96 p-4 border-2"
+            className="cart cart-compact bg-base-100 shadow-xl w-[350px] max-w-96 p-4 border-2 rounded-xl"
           >
             <figure className="">
               <img
@@ -58,7 +58,10 @@ const Availabele = () => {
                 </div>
                 <div className="text-right">
                   <h6 className="mb-3">{cart.batting_bowling_type}</h6>
-                  <button className="hover:bg-btnBg-0 border-2 p-2 rounded-lg">
+                  <button
+                    onClick={() => selectedPlayers(cart)}
+                    className="hover:bg-btnBg-0 border-2 p-2 rounded-lg"
+                  >
                     Choose Player
                   </button>
                 </div>
@@ -67,9 +70,12 @@ const Availabele = () => {
           </div>
         ))}
       </div>
-      <Selected carts={carts}></Selected>
     </div>
   );
+};
+
+Availabele.propTypes = {
+  selectedPlayers: PropTypes.func
 };
 
 export default Availabele;
