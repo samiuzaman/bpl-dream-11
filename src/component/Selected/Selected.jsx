@@ -1,23 +1,22 @@
 import { FaTrashAlt } from "react-icons/fa";
-const Selected = ({ cards }) => {
-  
+const Selected = ({ carts }) => {
   return (
     <div className="pb-16">
       <h2>Selected Page</h2>
       <div>
-        {cards.map((card) => (
+        {carts.map((cart) => (
           <div
-            key={card.id}
+            key={cart.id}
             className=" flex justify-between items-center border-2 p-4 rounded-xl mb-6"
           >
             <div className="flex items-center gap-5">
-              <img className="w-20 h-20 rounded-lg" src={card.image}></img>
+              <img className="w-20 h-20 rounded-lg" src={cart.image}></img>
               <div>
                 <h2 className="text-xl font-bold text-dark1-0 mb-1">
-                  {card.name}
+                  {cart.name}
                 </h2>
                 <p className="text-base font-normal text-dark4-0">
-                  {card.batting_bowling_type}
+                  {cart.batting_bowling_type}
                 </p>
               </div>
             </div>

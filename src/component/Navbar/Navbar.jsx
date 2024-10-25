@@ -36,6 +36,7 @@ const Navbar = ({ money }) => {
         {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
         <img className="w-16 h-16" src={Logo}></img>
       </div>
+
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-x-8">
           <li>

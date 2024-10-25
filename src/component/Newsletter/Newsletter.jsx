@@ -8,7 +8,7 @@ const Newsletter = () => {
       style={customBackground}
       className="w-11/12 lg:w-4/5 mx-auto absolute flex flex-col items-center py-12 rounded-xl text-center"
     >
-      <h2 className="text-2xl md:text-3xl font-bold text-dark1-0 mb-4">
+      <h2 className="text-xl md:text-3xl font-bold text-dark1-0 mb-4">
         Subscribe to our Newsletter
       </h2>
       <p className="text-base text-dark3-0 font-medium font-Inter">
