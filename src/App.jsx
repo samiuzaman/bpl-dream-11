@@ -20,7 +20,16 @@ function App() {
   const addToMoney = () => {
     const balance = 100000;
     setMoney(money + balance);
-    toast("Credit Added to your Account");
+    toast.success("Credit Added to your Account", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
   };
 
   const handleToggleBtn = (status) => {
@@ -39,7 +48,16 @@ function App() {
 
   const selectedPlayers = (player) => {
     if (selectedPlayer.length > 5) {
-      return toast("Sorry! The maximum player can choose is 6");
+      return toast.error("Sorry! The maximum player can choose is 6", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
     }
     if (money > player.bidding_price) {
       const playerExist = selectedPlayer.find(
@@ -48,12 +66,39 @@ function App() {
       if (!playerExist) {
         setMoney(money - player.bidding_price);
         setSelectedPlayer([...selectedPlayer, player]);
-        toast(`Congrates !! ${player.name} is now in your squad`);
+        toast.success(`Congrates !! ${player.name} is now in your squad`, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
       } else {
-        toast("Player already selected");
+        toast.error("Player already selected", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
       }
     } else {
-      toast("Not enough money to buy this player. Claim some Credit");
+      toast.error("Not enough money to buy this player. Claim some Credit", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
     }
   };
 
@@ -62,13 +107,23 @@ function App() {
       (player) => player.id !== id
     );
     setSelectedPlayer(newSelectedPlayer);
+    toast.error("Removed Player", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
   };
 
   return (
     <>
       <header className="w-11/12 lg:w-4/5 mx-auto">
         <div>
-          <ToastContainer></ToastContainer>
+          <ToastContainer />
         </div>
         <Navbar money={money} ToastContainer={ToastContainer}></Navbar>
         <Hero addToMoney={addToMoney} ToastContainer={ToastContainer}></Hero>
