@@ -1,6 +1,6 @@
 import { FaTrashAlt } from "react-icons/fa";
 const Selected = ({ cards }) => {
-  console.log(cards);
+  
   return (
     <div className="pb-16">
       <h2>Selected Page</h2>

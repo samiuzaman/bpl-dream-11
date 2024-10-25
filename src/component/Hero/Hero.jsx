@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 import Background from "../../assets/backgroud.png";
 import BannerImg from "../../assets/banner.png";
 
-const Hero = () => {
+const Hero = ({ addToMoney }) => {
   const custom = {
     background: `url(${Background})`,
     backgroundPosition: "center",
@@ -23,10 +24,16 @@ const Hero = () => {
         Beyond Boundaries Beyond Limits
       </p>
       <div className="lg:border lg:border-btnBg-0 p-1 rounded-xl">
-        <button className="btn myBtn btn-color">Claim Free Credit</button>
+        <button onClick={addToMoney} className="btn myBtn btn-color">
+          Claim Free Credit
+        </button>
       </div>
     </div>
   );
+};
+
+Hero.propTypes = {
+  addToMoney: PropTypes.func,
 };
 
 export default Hero;

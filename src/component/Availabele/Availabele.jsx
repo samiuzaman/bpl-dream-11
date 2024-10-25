@@ -18,11 +18,11 @@ const Availabele = () => {
         {cards.map((card) => (
           <div
             key={card.name}
-            className="card card-compact bg-base-100 w-96 shadow-xl p-4 border-2"
+            className="card card-compact bg-base-100 shadow-xl w-[350px] max-w-96 p-4 border-2"
           >
             <figure className="">
               <img
-                className="h-72 w-full rounded-xl"
+                className="h-60 w-full rounded-xl"
                 src={card.image}
                 alt="Shoes"
               />
@@ -44,21 +44,21 @@ const Availabele = () => {
                   {card.role}
                 </span>
               </div>
-              <div className="flex justify-between items-end pt-3">
+              <div className="flex justify-between items-end gap-3 pt-3">
                 <div>
                   <h6 className="text-base text-dark1-0 font-bold mb-3">
                     Rating
                   </h6>
                   <h6 className="text-base text-dark1-0 font-bold mb-3">
-                    Left-Hand-Bat
+                    Hand
                   </h6>
-                  <h6 className="text-base text-dark1-0 font-bold">
+                  <h6 className="text-base text-dark1-0 font-bold py-1">
                     Price: ${card.bidding_price}
                   </h6>
                 </div>
                 <div className="text-right">
                   <h6 className="mb-3">{card.batting_bowling_type}</h6>
-                  <button className="border-2 p-2 rounded-lg">
+                  <button className="hover:bg-btnBg-0 border-2 p-2 rounded-lg">
                     Choose Player
                   </button>
                 </div>

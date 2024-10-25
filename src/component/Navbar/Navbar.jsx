@@ -1,7 +1,8 @@
 import Logo from "../../assets/logo.png";
 import Coin from "../../assets/coin.png";
+import PropTypes from "prop-types";
 
-const Navbar = () => {
+const Navbar = ({ money }) => {
   return (
     <div className="navbar justify-between bg-base-100">
       <div className="navbar-start">
@@ -51,13 +52,17 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="w-32 border-2 px-3 py-2 flex justify-center gap-2 rounded-lg ml-4">
-        <p className="text-base text-dark1-0 font-semibold">0 Coin</p>
+      <div className="min-w-44 border-2 px-3 py-2 flex justify-center gap-2 rounded-lg ml-4">
+        <p className="text-base text-dark1-0 font-semibold"> {money} Coin</p>
         <img className="w-6 h-6" src={Coin}></img>
       </div>
       {/* <a className="btn ml-10">Button</a> */}
     </div>
   );
+};
+
+Navbar.propTypes = {
+  money: PropTypes.number,
 };
 
 export default Navbar;

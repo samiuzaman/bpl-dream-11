@@ -27,7 +27,7 @@ const Footer = () => {
         </nav>
         <form>
           <h6 className="f-title">Subscribe</h6>
-          <fieldset className="form-control w-80">
+          <fieldset className="form-control w-60">
             <label className="label">
               <span className="label-text text-base font-normal text-lightBlack2-0 mb-5">
                 Subscribe to our newsletter for the latest updates.
@@ -37,7 +37,7 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Enter your email"
-                className="input input-bordered join-item"
+                className="input input-bordered join-item w-48"
               />
               <button className="btn myBtn btn-color join-item bg-gradient-to-r from-[#F0CA69] to-[#D05A71] shadow-inner">
                 Subscribe
