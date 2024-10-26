@@ -4,13 +4,11 @@
 
 - <p>BPL Dream 11 is a user-friendly fantasy sports platform where users can create personalized teams, view comprehensive player stats, and stay updated on the latest information through a daily newsletter. The site’s responsive design ensures smooth access across devices, with clear team selection guidelines and interactive features tailored for a seamless fantasy team-building experience.</p>
 
-- <h3>5 key features of the project:</h3> 
+- <h3>3 key features of the project:</h3> 
     <ul>
     <li> User-Friendly Team Selection </li>
-    <li> Smoothly player Selection  </li>
     <li> You can buy your favorite team from this platform. </li>
     <li> Daily Newsletter provide</li>
-    <li> Live Data Integration </li>
     </ul>
 - <h3>Technologies:</h3> 
     <ul>
