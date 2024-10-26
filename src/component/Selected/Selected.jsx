@@ -21,8 +21,11 @@ const Selected = ({
                   <h2 className="text-xl font-bold text-dark1-0 mb-1">
                     {cart.name}
                   </h2>
+                  <p className="text-base font-normal text-dark4-0 mb-1">
+                    {cart.role}
+                  </p>
                   <p className="text-base font-normal text-dark4-0">
-                    {cart.batting_bowling_type}
+                    ${cart.bidding_price}
                   </p>
                 </div>
               </div>
