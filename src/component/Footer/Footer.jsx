@@ -6,7 +6,7 @@ const Footer = () => {
         <img src={Footerlogo}></img>
       </div>
       <div
-        className="w-11/12 lg:w-4/5 mx-auto  md:grid 
+        className="w-11/12 lg:w-5/6 mx-auto  md:grid 
       md:grid-cols-2 lg:grid-cols-3 md:justify-items-center py-16"
       >
         <nav className="mb-8 md:mb-0">

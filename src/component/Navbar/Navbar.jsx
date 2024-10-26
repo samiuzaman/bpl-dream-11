@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const Navbar = ({ money }) => {
   return (
-    <div className="navbar justify-between bg-base-100">
+    <div className="w-11/12 lg:w-5/6 mx-auto  navbar justify-between">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,7 +38,7 @@ const Navbar = ({ money }) => {
       </div>
 
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-x-6">
+        <ul className="menu menu-horizontal text-dark2-0 px-1 gap-x-6">
           <li>
             <a>Home</a>
           </li>

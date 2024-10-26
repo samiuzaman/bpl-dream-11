@@ -121,14 +121,16 @@ function App() {
 
   return (
     <>
-      <header className="w-11/12 lg:w-4/5 mx-auto">
+      <div className="sticky top-0 backdrop-blur-md bg-white/40">
+        <Navbar money={money} ToastContainer={ToastContainer}></Navbar>
+      </div>
+      <header className="w-11/12 lg:w-5/6 mx-auto">
         <div>
           <ToastContainer />
         </div>
-        <Navbar money={money} ToastContainer={ToastContainer}></Navbar>
         <Hero addToMoney={addToMoney} ToastContainer={ToastContainer}></Hero>
       </header>
-      <main className="w-11/12 lg:w-4/5 mx-auto my-28">
+      <main className="w-11/12 lg:w-5/6 mx-auto my-28">
         <Main
           selectedPlayer={selectedPlayer}
           handleToggleBtn={handleToggleBtn}
